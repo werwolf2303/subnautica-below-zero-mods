@@ -1,25 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Reflection;
+﻿using System.Reflection;
 using HarmonyLib;
+using Nautilus.Handlers;
+using Nautilus.Json;
+using Nautilus.Options.Attributes;
 using QModManager.API.ModLoading;
 using Logger = QModManager.Utility.Logger;
-// ### Enhancing the mod ###
-using SMLHelper.V2.Json;
-using SMLHelper.V2.Options.Attributes;
-using SMLHelper.V2.Handlers;
 
 namespace ExosuitPickupDistanceMod_BZ
 {
     [QModCore]
-    public static class QMod
+    public static class Plugin
     { 
         // ### Enhancing the mod ###
         // Set up an instance of the Config class, allowing the player to configure your mod
-        internal static Config Config { get; } = OptionsPanelHandler.Main.RegisterModOptions<Config>();
+        internal static Config Config { get; } = OptionsPanelHandler.RegisterModOptions<Config>();
 
     
         [QModPatch]
