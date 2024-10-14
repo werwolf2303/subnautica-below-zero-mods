@@ -1,4 +1,4 @@
 # Subnautica: Below Zero mods
-Mods I have created for the game, Subnautica: Below Zero.
+nmassaro's gameplay mods for Subnautica: Below Zero (UPDATED) 
 
-You can [view my published mod on Nexus](https://www.nexusmods.com/subnauticabelowzero/mods/294)!
+You can [view nmassaro's published mod on Nexus](https://www.nexusmods.com/subnauticabelowzero/mods/294)!
