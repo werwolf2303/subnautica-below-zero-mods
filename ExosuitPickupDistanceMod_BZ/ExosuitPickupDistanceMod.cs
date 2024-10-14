@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using HarmonyLib;
 using UnityEngine;
 using Logger = QModManager.Utility.Logger;
@@ -47,7 +42,7 @@ namespace ExosuitPickupDistanceMod_BZ
 
                     if (isUpdatingActiveTarget)
                     {
-                        maxDistance *= QMod.Config.ExosuitPickupDistanceModifier;
+                        maxDistance *= Plugin.Config.ExosuitPickupDistanceModifier;
                     }
                 }
 

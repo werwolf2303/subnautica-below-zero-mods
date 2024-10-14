@@ -13,7 +13,7 @@ namespace SeaTruckModuleWeightMod_BZ
             [HarmonyPrefix]
             public static bool Prefix(SeaTruckSegment __instance, ref float __result)
             {
-                if (QMod.Config.ShouldSeatruckModulesAddWeight)
+                if (Plugin.Config.ShouldSeatruckModulesAddWeight)
                 {
                     return true; // run original method
                 }

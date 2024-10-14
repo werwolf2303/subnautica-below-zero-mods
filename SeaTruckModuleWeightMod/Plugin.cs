@@ -1,18 +1,18 @@
 ﻿using HarmonyLib;
 using QModManager.API.ModLoading;
-using SMLHelper.V2.Handlers;
-using SMLHelper.V2.Json;
-using SMLHelper.V2.Options.Attributes;
 using System.Reflection;
 using Logger = QModManager.Utility.Logger;
+using Nautilus.Handlers;
+using Nautilus.Json;
+using Nautilus.Options.Attributes;
 
 
 namespace SeaTruckModuleWeightMod_BZ
 {
     [QModCore]
-    public static class QMod
+    public static class Plugin
     {
-        internal static Config Config { get; } = OptionsPanelHandler.Main.RegisterModOptions<Config>();
+        internal static Config Config { get; } = OptionsPanelHandler.RegisterModOptions<Config>();
 
 
         [QModPatch]
